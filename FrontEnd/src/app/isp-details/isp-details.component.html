@@ -1,16 +1,20 @@
-<div class="card " >
+<div class="card  border-info position-relative p-3" style= "top:15%; min-height: 26rem;" *ngIf = "selectedProviderDetails">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-  <div class="card-body">
-    <h5 class="card-title">{{selectedProvider.name}}</h5>
-    <p class="card-text">{{selectedProvider.description}}</p>
+  <div class="card-body text-white bg-info" style="font-size: medium; font-weight: 200;">
+    <h5 class="card-title">{{selectedProviderDetails.name}}</h5>
+    <p class="card-text">{{selectedProviderDetails.description}}</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{selectedProvider.lowest_price}}</li>
-    <li class="list-group-item">{{selectedProvider.max_speed}}</li>
-    <li class="list-group-item">{{selectedProvider.rating}}</li>
+    <li class="list-group-item"> <b>Min. Plan</b> {{selectedProviderDetails.lowest_price}}/-</li>
+    <li class="list-group-item"><b>Max Speed</b> {{selectedProviderDetails.max_speed}}</li>
+    <li class="progress">
+      <div class="progress-bar bg-warning text-center" role="progressbar" [ngStyle] = "{'width': (selectedProviderDetails.rating * 20)+'%' }" ><b>{{selectedProviderDetails.rating}}</b></div>
+    </li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">{{selectedProvider.email}}</a>
-    <a href="#" class="card-link">{{selectedProvider.url}}</a>
+  <div class="card-body d-flex justify-content-around">
+    <a href="#" class="card-link">{{selectedProviderDetails.email}}</a>
+    <a href="#" class="card-link">{{selectedProviderDetails.url}}</a>
+    <a style="text-decoration: none;">{{selectedProviderDetails.contact_number}}</a>
   </div>
 </div>
+<div *ngIf = "!selectedProviderDetails"> Loading data...</div>

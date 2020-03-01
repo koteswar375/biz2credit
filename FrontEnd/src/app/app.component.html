@@ -2,8 +2,8 @@
 <div style="text-align:center">
   <app-header></app-header>
   <div class="d-flex justify-content-around">
-    <app-isp-list class="w-25" (providerSelected)="displayDetails($event)"></app-isp-list>
-    <app-isp-details class="w-50 ml-3"></app-isp-details>
+    <app-isp-list [ispDetails] = "ispDetails" class="w-25" (providerSelected)="displayDetails($event)"></app-isp-list>
+    <app-isp-details [ispDetails] = "ispDetails" class="w-50 ml-3"></app-isp-details>
   </div>
 </div>
 

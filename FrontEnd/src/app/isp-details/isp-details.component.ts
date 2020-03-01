@@ -1,5 +1,5 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import isp from '../../assets/lists.json';
+import { Component, OnInit, ChangeDetectorRef, Input, SimpleChange } from '@angular/core';
+import { ISPAPIService } from '../ispapi.service.js';
 
 @Component({
   selector: 'app-isp-details',
@@ -7,20 +7,25 @@ import isp from '../../assets/lists.json';
   styleUrls: ['./isp-details.component.css']
 })
 export class IspDetailsComponent implements OnInit {
-  ispDetails;
-  selectedProvider;
-  constructor(private ref: ChangeDetectorRef) { 
-    this.ispDetails =isp;
-    this.selectedProvider = this.ispDetails[0];
+  @Input() ispDetails;
+  selectedProviderDetails;
+  constructor(private ref: ChangeDetectorRef, private apiService: ISPAPIService) {
   }
 
   ngOnInit() {
+
+  }
+
+  ngOnChanges(changes: { [propKey: string]: SimpleChange }) {
+    if (changes.ispDetails.currentValue) {
+      this.selectedProviderDetails = this.ispDetails[0];
+    }
   }
 
 
-  displayDetails( selectedProvider ) {
+  displayDetails(selectedProvider) {
     let arr = this.ispDetails.filter((provider) => (provider.name === selectedProvider));
-    this.selectedProvider = arr[0];
+    this.selectedProviderDetails = arr[0];
   }
 
 }

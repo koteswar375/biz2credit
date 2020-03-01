@@ -1,8 +1,15 @@
-<div>
-  <ul class="list-group text-left">
-    <li class="list-group-item" *ngFor="let isp of ispList">
-      <input (input) = "selectProvider($event)" type="radio" id="isp" name="isp-provider" [value]="isp.name">
-      <label for="isp">{{isp.name}}</label><br>
+<div class="mt-5">
+  <ul class="list-group text-left " >
+    <li class="list-group-item py-2 border-secondary" [class.active] = "isp === selectedProvider" *ngFor="let isp of ispList" >
+      <input class="mx-2" [checked]="isp === selectedProvider" (input) = "selectProvider($event)" type="radio" id="{{isp}}" name="isp-provider" [value]="isp">
+      <label for="{{isp}}">{{isp}}</label><br>
+    </li>
+    <li class="list-group-item py-2 border-secondary">
+      <label>Sort By</label>
+      <input class="ml-3 mr-1 d-inline" (input) ="sort('lowest_price')" type="radio" id="price" name="sort" [value]="price">
+      <label for="price">Price</label>
+      <input class="ml-3 mr-1"  type="radio" (input) ="sort('rating', 'reverse')" id="Rating" name="sort" [value]="rating">
+      <label for="Rating">Rating</label>
     </li>
   </ul>
 </div>

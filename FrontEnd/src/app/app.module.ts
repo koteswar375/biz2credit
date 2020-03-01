@@ -6,16 +6,19 @@ import { AppComponent } from './app.component';
 import { IspDetailsComponent } from './isp-details/isp-details.component';
 import { IspListComponent } from './isp-list/isp-list.component';
 import { HeaderComponent } from './header/header.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SortPipe } from './sort.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     IspDetailsComponent,
     IspListComponent,
-    HeaderComponent
+    HeaderComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

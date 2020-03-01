@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IspDetailsComponent } from './isp-details/isp-details.component';
+import { ISPAPIService } from './ispapi.service';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,21 @@ import { IspDetailsComponent } from './isp-details/isp-details.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild(IspDetailsComponent) ispdetails : IspDetailsComponent;
+  @ViewChild(IspDetailsComponent) ispdetailsComponent : IspDetailsComponent;
+  ispDetails: Object;
 
-  title = 'ISP';
+  constructor(private apiService:ISPAPIService) {
 
-  displayDetails(provider) {
-    this.ispdetails.displayDetails(provider);
+    }
+  ngOnInit() {
+    this.apiService.getISPsDetails().subscribe(
+      (response) => {
+        this.ispDetails = response;
+      }
+    )
+  }
+
+  displayDetails(name) {
+    this.ispdetailsComponent.displayDetails(name);
   }
 }
