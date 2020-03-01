@@ -1,0 +1,26 @@
+.navBar {
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    bottom: inherit;
+    /* position: fixed; */
+    border-bottom: 2px solid #6fb253;
+    box-shadow: 0 0 5px rgba(0,0,0, .1);
+    top: 0px;
+}
+
+a {
+    background-color: transparent;
+    outline: none;
+}
+
+.logo {
+    width:125px;
+    height:auto;
+    text-align: center;
+}
+
+
+.logo {
+    display: inline-block;
+}

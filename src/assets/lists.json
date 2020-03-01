@@ -1,0 +1,23 @@
+[{
+    "name":"BSNL",
+    "lowest_price,": 32,
+    "rating":5,
+    "max_speed":"32MPS",
+    "description": "ISP",
+    "contact_number":876897698,
+    "email":"bsnl@gov.in",
+    "image":"src",
+    "url":"https://bsnl.com"
+},
+{
+    "name":"Airtel",
+    "lowest_price,": 45,
+    "rating":5,
+    "max_speed":"32MPS",
+    "description": "ISP",
+    "contact_number":876897698,
+    "email":"airtel@gov.in",
+    "image":"src",
+    "url":"https://airtel.com"
+}
+]
