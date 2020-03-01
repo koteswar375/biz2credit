@@ -1,0 +1,100 @@
+[{
+    "name":"BSNL",
+    "lowest_price,": 210,
+    "rating":3,
+    "max_speed":"30MPS",
+    "description": "Bharat Sanchar Nigam Limited, d/b/a BSNL is an Indian state-owned telecommunications company, headquartered in New Delhi, Delhi, India. It was incorporated by Government of India on 1 October 2000.",
+    "contact_number":"1800-345-1500",
+    "email":"portalhelpdesk@bsnl.co.in",
+    "image":"src",
+    "url":"www.bsnl.co.in"
+},
+{
+    "name":"Airtel",
+    "lowest_price,": 450,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "Airtel India is the third largest provider of mobile telephony and second largest provider of fixed telephony in India, and is also a provider of broadband and subscription television services.[3] The brand is operated by several subsidiaries of Bharti Airtel",
+    "contact_number":"1800-345-1500",
+    "email":"portalhelpdesk@airtel.co.in",
+    "image":"src",
+    "url":"https://www.airtel.in/"
+},
+{
+    "name":"Vodafone",
+    "lowest_price,": 300,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "Vodafone Idea Limited[9][10] is an Indian telecom operator[11] with its headquarters based in Mumbai, Maharashtra and Gandhinagar, Gujarat.[12][13] Vodafone Idea is a pan-India integrated GSM operator offering 2G, 3G and 4G VoLTE mobile services under two brands named Vodafone and Idea",
+    "contact_number":"+91 79 66714000",
+    "email":"portalhelpdesk@vodafone.co.in",
+    "image":"src",
+    "url":"www.vodafoneidea.com/"
+},
+{
+    "name":"Jio",
+    "lowest_price,": 300,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "Reliance Jio Infocomm Limited, d/b/a Jio, is an Indian telecommunications company and wholly owned subsidiary of Reliance Industries, headquartered in Mumbai, Maharashtra, India. It operates a national LTE network with coverage across all 22 telecom circles.",
+    "contact_number":"1860-893-3333",
+    "email":"care@jio.com",
+    "image":"src",
+    "url":"www.jio.com"
+},
+{
+    "name":"Tata Teleservices",
+    "lowest_price,": 300,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "Tata Teleservices Limited (TTSL) is an Indian broadband and telecommunications service provider based in Mumbai, Maharashtra, India. It is a subsidiary of the Tata Group, an Indian conglomerate company.",
+    "contact_number":"1800-266-1515",
+    "email":"dobig@tatatel.co.in",
+    "image":"src",
+    "url":"www.tatateleservices.com"
+},
+{
+    "name":"ACT",
+    "lowest_price,": 300,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "Atria Convergence Technologies Limited., branded as ACT, is an Indian telecommunications company headquartered in Bangalore, Karnataka. ACT offers fiber to the home services under the brand name ACT Fibernet and digital television services under the ACT Digital brand.",
+    "contact_number":"+91-7288999999",
+    "email":"helpdesk.blr@actcorp.in",
+    "image":"src",
+    "url":"www.actcorp.in"
+},
+{
+    "name":"MTNL",
+    "lowest_price,": 300,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "Mahanagar Telephone Nigam Limited, d/b/a MTNL, is a state-owned telecommunications service provider and wholly owned subsidiary of BSNL[1] headquartered in New Delhi, India. ",
+    "contact_number":"022-22073976",
+    "email":"selfcare@mtnl.net.in",
+    "image":"src",
+    "url":"www.mtnl.in"
+},
+{
+    "name":"Hathway",
+    "lowest_price,": 300,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "Hathway Cable & Datacom Ltd (NSE: HATHWAY), initially known as BITV Cable Networks (BSE: 533162), is a cable television service operator in India based in Mumbai.[2] It was acquired by Hathway Investments Pvt Ltd in 1999.",
+    "contact_number":"080-68127001",
+    "email":"helpdeskpune@hathway.net",
+    "image":"src",
+    "url":"www.hathway.com"
+},
+{
+    "name":"YOU Broadband",
+    "lowest_price,": 300,
+    "rating":5,
+    "max_speed":"50MPS",
+    "description": "You Broadband India Ltd., a broadband service provider in India.",
+    "contact_number":"91212 91212",
+    "email":"customercare@youbroadband.co.in",
+    "image":"src",
+    "url":"https://youbroadband.in/"
+}
+]

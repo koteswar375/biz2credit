@@ -1,6 +1,5 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import isp from '../../assets/lists.json';
-import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-isp-list',
@@ -9,7 +8,7 @@ import { EventEmitter } from 'protractor';
 })
 export class IspListComponent implements OnInit {
 
-  @Output() providerSelected = new EventEmitter<any>();
+  @Output() providerSelected = new EventEmitter<string>();
   ispList;
   constructor() { }
 
